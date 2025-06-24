@@ -18,7 +18,7 @@ st.set_page_config(page_title="Transaction Fraud Detection", layout="centered")
 
 # --- Load Trained Models ---
 try:
-    model_bundle = joblib.load("model/fraud.pkl")
+    model_bundle = joblib.load("fraud_detection_app/model/fraud.pkl")
 
     rf_model = model_bundle['random_forest']
     nb_model = model_bundle['naive_bayes']
